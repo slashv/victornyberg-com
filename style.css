@@ -1,0 +1,156 @@
+:root {
+  --black: hsla(0, 0%, 8%, 1);
+  --white: hsla(0, 0%, 98%, 1);
+}
+
+@font-face {
+    font-family: DINProBlack;
+    src: url("fonts/DINPro-Black.otf") format("opentype");
+}
+@font-face {
+    font-family: DINProBold;
+    src: url("fonts/DINPro-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: DINProLight;
+    src: url("fonts/DINPro-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: DINProMedium;
+    src: url("fonts/DINPro-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: DINProRegular;
+    src: url("fonts/DINPro-Regular.otf") format("opentype");
+}
+
+html {
+    font-family: DINProLight;
+    font-size: 14px;
+    line-height: 1.6rem;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: var(--black);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+	background-color: var(--white);
+}
+
+img {
+    margin: 0;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+strong {
+  font-family: DINProBold;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: DINProMedium;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page-container {
+	background-color: var(--white);
+  margin: 2rem;
+}
+
+.nav {
+}
+
+.nav .name {
+  font-family: DINProBold;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.nav .links {
+  font-family: DINProMedium;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav .work-info {
+  padding-bottom: .5rem;
+}
+
+.nav .links a {
+  margin-bottom: .35rem;
+}
+
+.nav .links a.current {
+  text-decoration: underline;
+}
+
+.image-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.image {
+  margin-bottom: 6rem;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+  object-fit: contain;
+}
+
+.video video {
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+  object-fit: contain;
+}
+
+.image .cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image .title {
+  font-family: DINProMedium;
+}
+
+.about {
+  margin-top: 2rem;
+}
+
+.about p {
+  margin-bottom: .5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-container {
+    margin: 1rem;
+  }
+  .image .cols {
+    flex-direction: column;
+  }
+}
